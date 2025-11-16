@@ -1,6 +1,5 @@
 **Introduction**
-HighRelax is a novel post-processing strategy that extends the Amber force field to improve the physical realism of protein structures containing non-canonical amino acids (NCAAs). This method, which is designed for use with deep learning protein structure prediction models like AlphaFold3, focuses on restoring stereochemistry, reducing clashes, and refining overall geometry without significantly altering the global conformation.# HighRelax
-[Uploading 1.tif…]()
+HighRelax is a novel post-processing strategy that extends the Amber force field to improve the physical realism of protein structures containing non-canonical amino acids (NCAAs). This method, which is designed for use with deep learning protein structure prediction models like AlphaFold3, focuses on restoring stereochemistry, reducing clashes, and refining overall geometry without significantly altering the global conformation.
 
 **Installation**
 conda create -n HighRelax python=3.11

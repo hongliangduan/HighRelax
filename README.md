@@ -3,12 +3,16 @@ HighRelax is a novel post-processing strategy that extends the Amber force field
 
 **Installation**
 conda create -n HighRelax python=3.11
+
 conda install -c conda-forge openmm ambertools=25
 
 **Usage**
 1、Prepare your input files: Prediction PDB file from AlphaFold3
+
 Force field parameter files (.prepin, .frcmod)
+
 2、Load the structure into tleap: tleap -f leap.in
+
 3、python HighRelax.py 
 
 **Files**

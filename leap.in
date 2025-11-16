@@ -1,0 +1,22 @@
+# Load the required Amber force field and parameters
+source leaprc.protein.ff19SB
+source leaprc.gaff
+
+# Load the Amber parameter files for the non-canonical amino acid
+loadAmberPrep XXX.prepin
+loadAmberParams XXX.frcmod
+
+# Load the PDB structure
+mol = loadPdb model.pdb
+
+# Check the structure for issues
+check mol
+
+# Save the Amber parameter and coordinate files
+saveAmberParm mol system.prmtop system.inpcrd
+
+# Save the final PDB file
+savePdb mol c.pdb
+
+# Exit LEaP
+quit
